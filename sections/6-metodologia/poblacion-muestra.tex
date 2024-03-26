@@ -1,19 +1,28 @@
 
 \subsection{Población y muestra}
-Para determinar la cantidad mínima de experimentos requeridos para evaluar la eficacia del sistema de riego en el Vivero Michita, se utilizó una fórmula estadística con un nivel de confianza del 90\%, equivalente a una puntuación estándar de 1.645 en una distribución normal.
-\bigbreak
-La fórmula utilizada para determinar el número mínimo de experimentaciones fue:
-\begin{align*}
-     & n = \text{tamaño de la muestra}                                                                       \\
-     & Z = \text{nivel de confianza del 90\% con una puntuación estándar de 1.645} \\
-     & p = q = \text{probabilidad de éxito esperada, ambas asumidas como 0.50 (equitativas)}                 \\
-     & e = \text{error de estimación máximo aceptable, 0.05 para un margen de error del 5\%}
-\end{align*}
 
-\[ n = \frac{{Z^2 \cdot p \cdot q}}{{e^2}} \]
+Para determinar el tamaño de muestra equitativo para las tres categorías de plantas en el Vivero Michita, utilizamos una fórmula estadística con un nivel de confianza del 90\%, equivalente a una puntuación estándar de 1.645 en una distribución normal.
 
-\[ n = \frac{(1.645)^2 \cdot 0.50 \cdot 0.50}{0.05^2} \]
+La fórmula utilizada para determinar el tamaño de muestra fue:
 
-\[ n = 270.6 \approx 271 \]
+\[ n = \frac{N \times Z^2 \times S^2}{d^2 (N-1) + Z^2 \times S^2} \]
 
-Con un nivel de confianza del 90\% y un margen de error máximo aceptable del 5\%, se estima que se requiere una muestra de alrededor de 271 experimentaciones. Esta cantidad se considera esencial para garantizar la validez y representatividad de los resultados al evaluar la eficiencia del sistema de riego en el Vivero Michita.
+Donde:
+\begin{itemize}
+     \item $N$ es el tamaño total de la población, que en este caso es $210$ plantas.
+     \item $Z$ es la puntuación estándar asociada con el nivel de confianza del 90\%, que es aproximadamente $1.645$.
+     \item $S$ es la desviación estándar de la población, es de $1$.
+     \item $d$ es el margen de error deseado, que en este caso es $0.05$.
+\end{itemize}
+
+Calculando el tamaño de muestra:
+
+\[ n = \frac{210 \times (1.645)^2 \times 1^2}{0.05^2 \times (210-1) + (1.645)^2 \times 1^2} \]
+
+\[ n \approx \frac{568.05}{0.5225 + 2.705} \]
+
+\[ n \approx \frac{568.05}{3.2275} \]
+
+\[ n \approx 176.09 \]
+
+Redondeando este valor, obtenemos $n \approx 176$. Se estima que se requiere una muestra de alrededor de 176 experimentaciones para cada categoría. Esta cantidad se considera esencial para garantizar la validez y representatividad de los resultados al evaluar la eficiencia del sistema de riego en el Vivero Michita.
