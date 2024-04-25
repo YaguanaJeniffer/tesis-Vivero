@@ -1,5 +1,11 @@
 {
-  "cSpell.words": ["monitoreo"],
+  "cSpell.words": [
+    "arduinos",
+    "cuenta",
+    "Michita",
+    "monitoreo"
+  ],
   "latex-workshop.latex.recipe.default": "latexmk (lualatex)",
-  "latex-workshop.latex.outDir":"%DIR%/out"
+  "latex-workshop.latex.outDir":"%DIR%/out",
+  "cSpell.language": "en,es"
 }

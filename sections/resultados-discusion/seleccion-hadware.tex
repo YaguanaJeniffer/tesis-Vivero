@@ -1,0 +1,21 @@
+\subsection{Análisis y selección de hardware}
+Para la selección de los dispositivos electrónicos que formarán parte del prototipo de sistema de monitoreo y control, se llevó a cabo un exhaustivo análisis de diversas características técnicas y tecnológicas. Se evaluaron detalladamente aspectos como la compatibilidad con el sistema propuesto, la capacidad de adquisición de datos, la precisión en las mediciones, así como la disponibilidad y el costo de cada elemento.
+
+\subsubsection*{Sensores de temperatura y humedad}
+Según se observa en la Tabla \ref{tab:comprativa_sensores_humedad_temperatura}, el sensor DHT22 sobresale por su respuesta rápida, excelente calidad y bajo consumo de energía. Su amplio rango de temperatura y humedad lo posiciona como una opción ideal para aplicaciones exigentes. A pesar de compartir características similares con el DHT11, la precisión y confiabilidad del DHT22 lo convierten en una elección sobresaliente para proyectos de monitoreo ambiental, estaciones meteorológicas y sistemas de control automático.
+\input{resources/tables/tabla-comparativa-sensores-humedad-temperatura.tex}
+
+\subsubsection*{Placas de Arduino}
+Después de comparar las características técnicas del Arduino Uno, Arduino Leonardo y Arduino Mega, se seleccionó el Arduino Mega como la opción más adecuada para el proyecto. Esto se debe a su mayor cantidad de pines GPIO y entradas analógicas, lo que permite una mayor flexibilidad en la conexión de sensores y actuadores.
+\\
+\\ 
+Además, el Arduino Mega cuenta con una mayor capacidad de memoria flash y SRAM, lo que lo hace más adecuado para proyectos que requieren el procesamiento de grandes cantidades de datos. Su compatibilidad con una amplia gama de shields y su recomendación como la placa más avanzada y potente de la comparación respaldan esta elección. Esta información detallada se puede encontrar en la tabla comparativa de placas de arduinos en la Tabla \ref{tab:comparativa-placas-arduino}.
+
+\input{resources/tables/tabla-comparativa-placa-arduino.tex}
+
+\subsubsection*{Microcontrolador}
+Basándonos en la investigación realizada por el autor en \cite{verdezoto_arauz_implementacion_2023}, coincidimos en la elección del microcontrolador ESP32 WROOM para la implementación del prototipo. Además, concordamos en que el ESP32 supera a otras opciones consideradas, como el ESP8266 y la placa Netduino-3, debido a su mayor velocidad de transmisión WLAN y su capacidad para mejorar la calidad de sonido a través de pines DAC. 
+\\
+\\
+Consideramos que estas características son fundamentales para el adecuado funcionamiento del sistema de monitoreo y control del consumo de agua en los cultivos del vivero Michita. En resumen, respaldamos la elección del ESP32 WROOM como la opción más adecuada para cumplir con los objetivos de la investigación de manera eficiente y efectiva, alineándome con las conclusiones del autor.
+\input{resources/tables/tabla-comparativa-microcontrolador.tex}
